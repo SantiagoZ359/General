@@ -34,3 +34,25 @@ def second_largest(nums):
 numbers = [2, 3, 6, 6, 5]
 result = second_largest(numbers)
 print("El segundo número más grande es:", result)
+
+# 5
+def generate_combinations(X, Y, Z, N):
+    result = []
+
+    for i in range(X + 1):
+        for j in range(Y + 1):
+            for k in range(Z + 1):
+                if i + j + k != N:
+                    result.append((i, j, k))
+
+    return result
+
+X = int(input("Ingrese el valor de X: "))
+Y = int(input("Ingrese el valor de Y: "))
+Z = int(input("Ingrese el valor de Z: "))
+N = int(input("Ingrese el valor de N: "))
+
+combinations = generate_combinations(X, Y, Z, N)
+print("Lista de combinaciones:")
+for combination in combinations:
+    print(combination, end=", ")
