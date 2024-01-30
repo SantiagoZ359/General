@@ -90,5 +90,5 @@ lista_b = [4, 5, 6, 7, 8]
 
 comunes = elementos_comunes(lista_a, lista_b)
 
-
+#10
 
