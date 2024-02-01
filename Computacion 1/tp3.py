@@ -92,3 +92,40 @@ comunes = elementos_comunes(lista_a, lista_b)
 
 #10
 
+#menu
+print("Bienvenido a nuestro calculador de impuestos:")
+
+def menu(option):
+    if option == 1:
+        product = int(input("Ingrese el valor de su producto: "))
+        calculo_1 = product * 8;
+        calculo_2 = calculo_1 / 100;
+        resultado = calculo_2 + product;
+        print("lo que vale tu producto con el iva incluido es:",resultado)
+    elif option == 2:
+        ventas = str(input("Usted vende productos al exterior? (1 para si / 2 para no) :"))
+        if ventas == 1:
+            print("usted no paga iva")
+        elif ventas == 2:
+            product = int(input("Ingrese el valor de su producto: "))
+            calculo_1 = product * 16;
+            calculo_2 = calculo_1 / 100;
+            resultado = calculo_2 + product;
+            print("usted paga: ",resultado)
+        else:
+            print("usted ingreso una opcion icorrecta")
+            return ventas
+    elif option == 3:
+        product = int(input("Ingrese el valor de su producto: "))
+        calculo_1 = product * 21;
+        calculo_2 = calculo_1 / 100;
+        resultado = calculo_2 + product;
+        print("lo que vale tu producto con el iva incluido es:",resultado)
+    elif option == 4:
+        print("Adios");
+        exit;
+    else:
+        print("respuesta invalida")
+
+option = int(input("Ingrese 1 si es de USA, 2 si es de México, 3 si es de Argentina, 4 para salir: "));
+menu(option)
