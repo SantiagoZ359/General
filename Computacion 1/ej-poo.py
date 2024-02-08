@@ -33,7 +33,7 @@ class Mate:
             print("Tomando mate")
             self.quedan_cebadas -= 1
             self.lleno = False
-            if self.quedan_cebadas == 0:
+            if self.quedan_cebadas <= 0:
                 print("No puedes tomar más mates, el mate está lavado.")
                 self.lleno = False
 
