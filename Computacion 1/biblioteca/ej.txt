@@ -1,0 +1,3 @@
+La idea era crear una biblioteca con los correspondientes clases de libro, cliente, libreria, se tiene que poder crear un libro, un cliente, mostrar los clientes y salir
+Los libros tienen que tener una disponibilidad, un cliente no se puede registrar 2 veces bajo el mismo nombre
+
