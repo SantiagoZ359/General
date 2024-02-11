@@ -14,10 +14,16 @@ class Main:
             if opc == 2:
                 library.add_client()
             
-            if opc ==3:
+            if opc == 3:
                 library.show_clients()
+            
+            #if opc == 4:
+                #library.book_disponibility()
 
-            elif opc == 4:
+            if opc == 5:
+                library.show_books()
+
+            elif opc == 6:
                 break
 
 

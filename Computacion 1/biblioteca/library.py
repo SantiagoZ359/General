@@ -35,3 +35,20 @@ class Library:
         print(constants.SHOW_CLIENTS_INTRO)
         for i in range(len(self.clients)):
             print(self.clients[i])
+    
+    def show_books(self):
+        print(constants.BOOKS_INTRO)
+        for i in range(len(self.books)):
+            print(self.books[i])
+
+    def book_disponibility(self):
+        name_book = input(constants.SEARCH_BOOK_INTRO)
+
+        for i in range(len(self.books)):
+            print("entra")
+            if self.books[i].name == name_book:
+                print("1")
+                return self.books[i]
+            else:
+                print(constants.SEARCH_BOOK_ERROR)
+                return None
